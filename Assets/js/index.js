@@ -20,6 +20,17 @@ $(document).ready(function(){
         }
         $(this).addClass("active");
     });
+
+    $("#contact_form").submit(function(e) {
+
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var message = $("#message").val();
+
+        if (name === "") {
+            return false;
+        }
+    })
     
     skillbars();
 });
