@@ -121,7 +121,7 @@ header .highlight span {
 .service-title {
 	font-size: 20px;
 	margin:10px 0;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .service-description {
@@ -150,12 +150,12 @@ header .highlight span {
 }
 .filter-button
 {
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     color: #444;
     margin-top: 5px;
  	background-color: #ffffff;
- 	font-weight: 700;
+ 	font-weight: 500;
  	padding: 3px 15px;
 
 
@@ -324,8 +324,8 @@ button::-moz-focus-inner {
 }
 
 #testimonial p {
-	font-size: 24px;
-	font-weight: 100;
+	font-size: 26px;
+	font-weight: 300;
 }
 
 .testimonial-autor {
@@ -338,8 +338,8 @@ button::-moz-focus-inner {
 
 #contact {
 	padding: 50px 0;
- 
-	background-color: #3c4a52;
+ 	background-image: url('../images/contact1.png');
+	background-size: cover;
 	color: #ffffff;
 }
 
@@ -396,7 +396,7 @@ footer {
 
 footer p {
 	margin: 0;
-	padding: 45px 0;
+	padding: 50px 0;
 	color: #576269;
 	font-weight: 700;
 }
