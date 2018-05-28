@@ -23,17 +23,58 @@ $(document).ready(function(){
 
     $("#contact_form").submit(function(e) {
 
-        var name = $("#name").val();
-        var email = $("#email").val();
-        var message = $("#message").val();
+        var error = formValidate();
 
-        if (name === "") {
+        if (error !== "") {
+            $("#" + error).focus();
             return false;
         }
+    })
+
+    $("#contact_form input, #contact_form textarea").keypress(function() {
+        $(this).parent().find(".error").fadeOut();
     })
     
     skillbars();
 });
+
+function formValidate () {
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var message = $("#message").val();
+    var error = "";
+
+    if (name === "") {
+        $("#name_msg").fadeIn();
+        $("#name_error").text('Name is Required');
+        error = "name";
+
+    }if (name.length < 3) {
+
+        if(error === "") {
+            error = "name";
+            $("#name_msg").fadeIn();
+            $("#name_error").text('Minum of 2 characters');
+        }
+
+    }if (email === "") {
+        $("#mail_msg").fadeIn();
+        $("#email_error").html('Email is required');
+        if(error === "")
+            error = "email";
+    }if (message === "") {
+        $("#message_msg").fadeIn();
+        if(error === "")
+            error = "message";
+    }if (!validateEmail(email)) {
+        $("#mail_msg").fadeIn();
+        $("#email_error").html('Invalid Email');
+        if(error === "")
+            error = "email";
+    }
+
+    return error;
+}
 
 function skillbars () {
 
@@ -77,4 +118,9 @@ function skillbars () {
  
             width: 78 // 80%
     });
+}
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
 }

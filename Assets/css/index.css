@@ -264,6 +264,7 @@ button::-moz-focus-inner {
 
 #skills p {
 	font-weight: 400;
+	font-size: 14px;
 }
 
 .simple-skillbar {
@@ -425,7 +426,8 @@ footer p {
 	font-family: 'Montserrat';
 }
 
- .overlay{
+
+.overlay{
   position: absolute;
   opacity: 0.9;
   text-align: center;
@@ -477,10 +479,38 @@ footer p {
 
 }
 
+.portfolio-links a {
+	color: inherit;
+}
+
+#connect .social-icon li .fa:hover {
+	opacity: 0.8;
+	transition: 0.5s;
+}
+
+.portfolio-links a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.error {
+	margin: 5px 0;
+	display: none;
+}
+
+.portfolio-links .fa {
+	font-size: 23px;
+	display: inline-block;
+	margin: 5px;
+	padding: 7px;
+	background-color: #4bcaff;
+	 
+}
+
 .gallery_product figure:hover figcaption .text {
  	
 	opacity: 1;
-	transition: 0.8s;
+	transition: 1.8s;
 }
 
 .gallery_product figure:hover figcaption {
