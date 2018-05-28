@@ -1,7 +1,3 @@
-body {
-	overflow-x: hidden;
-	position: relative;
-}
 
 #main-nav {
 	padding:35px 0;
@@ -484,9 +480,6 @@ footer p {
 
 }
 
-.fixed-top {
-	width: 100%;
-}
 
 .gallery_product figcaption {
 	position: absolute;
