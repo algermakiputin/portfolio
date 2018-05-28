@@ -15,6 +15,10 @@
     	font-size: 22px;
     }
 
+    header .highlight {
+    	width: 80%;
+    }
+
   	#services {
   		text-align: center;
   	}
