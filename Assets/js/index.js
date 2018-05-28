@@ -62,15 +62,20 @@ function formValidate () {
         $("#email_error").html('Email is required');
         if(error === "")
             error = "email";
+    }else if (!validateEmail(email)) {
+        
+      
+    
+        $("#email_error").html('Invalid Email');
+        $("#mail_msg").fadeIn();
+        error = "email";
+            
+
     }if (message === "") {
         $("#message_msg").fadeIn();
+        $("#message_error").text('Message is Required');
         if(error === "")
             error = "message";
-    }if (!validateEmail(email)) {
-        $("#mail_msg").fadeIn();
-        $("#email_error").html('Invalid Email');
-        if(error === "")
-            error = "email";
     }
 
     return error;
