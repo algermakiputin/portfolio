@@ -78,6 +78,10 @@ header .highlight {
 	text-align: right;
 }
 
+header .highlight {
+	display: none;
+}
+
 header .highlight span {
 	background: rgba(71,82,89,0.70);
 	padding: 10px 20px;
@@ -87,6 +91,7 @@ header .highlight span {
 	text-transform: uppercase;
 	display: inline-block;
 	margin-bottom: 12px;
+
 }
 
 #services {
