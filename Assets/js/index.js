@@ -37,9 +37,6 @@ $(document).ready(function(){
     
     skillbars();
 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        $("#contact_image").css('background-image','../images/contact1_mobile.png');
-    }
 });
 
 function formValidate () {

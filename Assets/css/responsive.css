@@ -78,6 +78,12 @@ and (max-width: 1249px) {
 		padding: 0 10px;
 	}
 
+	#contact {
+		background-image: url("../images/contact1_mobile.png");
+		background-size: cover;
+		background-position: right;
+	}
+
 	header .highlight span {
 		font-size: 17px;
 	}
