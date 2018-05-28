@@ -484,6 +484,10 @@ footer p {
 
 }
 
+.fixed-top {
+	width: 100%;
+}
+
 .gallery_product figcaption {
 	position: absolute;
   bottom: 0;
