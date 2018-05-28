@@ -1,0 +1,65 @@
+@media only screen and (max-width: 768px) {
+    header {
+    	height: 500px;
+    }
+
+    header .highlight span {
+    	font-size: 22px;
+    }
+
+    .section-header {
+    	font-size: 20px;
+    }
+
+    .service-icon .fa {
+    	font-size: 22px;
+    }
+
+  	#services {
+  		text-align: center;
+  	}
+
+  	#filter-button-container {
+  		text-align: center;
+  		margin-bottom: 20px;
+  	}
+
+  	.filter-button {
+  		font-size: 14px;
+  		margin-top: 0;
+  		padding: 3px 5px;
+
+  	}
+
+  	.gallery_product figure .text h3 {
+  		font-size: 12px;
+  	}
+
+  	.portfolio-links .fa {
+  		font-size: 12px;
+  	}
+
+
+}
+
+@media only screen and (max-width: 425px) {
+	#main-nav .container {
+		padding: 0 10px;
+	}
+
+	header .highlight span {
+		font-size: 17px;
+	}
+
+	header .highlight {
+		width: 90%;
+	}
+
+	header {
+		height: 550px;
+	}
+
+	#contact .right {
+		display: none;
+	}
+}

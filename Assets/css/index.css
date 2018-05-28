@@ -48,6 +48,15 @@ body {
 	color: #4bcaff;
 }
 
+.navbar .fa-bars {
+	color: #fff;
+}
+
+.navbar-toggle {
+  border: none !important;
+  outline: none !important;
+}
+
 .navbar .nav-item .nav-link:hover {
 
 }
@@ -66,6 +75,11 @@ header .highlight {
 	top: 50%;
 	left: 50%;
 	transform:translate(-50%,-50%);
+	width: 80%;
+}
+
+#filter-button-container {
+	text-align: right;
 }
 
 header .highlight span {
@@ -351,6 +365,12 @@ button::-moz-focus-inner {
 
 .testimonial-autor {
 	color: #4bcaff;
+}
+
+.navbar-toggler-icon {
+	color: #fff !important; \
+	z-index: 1;
+	background-color: red;
 }
 
 .blue {
