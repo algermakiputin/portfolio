@@ -334,6 +334,7 @@ button::-moz-focus-inner {
 #testimonial {
 	padding: 50px 0;
 	background-color: #fff;
+	min-height: 387px;
 }
 
 .carousel-indicators {
