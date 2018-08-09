@@ -10,6 +10,11 @@
 	font-weight: 700;
 }
 
+.navbar-brand:hover {
+	color: #fff;
+	opacity: 0.9;
+}
+
 .navbar .nav-item {
 	margin: 0 10px;
 }
@@ -80,13 +85,14 @@ header .highlight {
 
 header .highlight {
 	display: none;
+	min-width: 700px;
 }
 
 header .highlight span {
 	background: rgba(71,82,89,0.70);
 	padding: 10px 20px;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 900;
 	font-size: 32px;
 	text-transform: uppercase;
 	display: inline-block;
@@ -94,14 +100,28 @@ header .highlight span {
 
 }
 
+header .highlight span span {
+	padding:10px;
+}
+
 #services {
-	background-color: #4bcaff;
+
+ 
+	background-image: url(../images/service-bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
 	padding: 50px 0;
 	color: #fff;
+	position: relative;
+}
+
+#services:before {
+	
 }
 
 #portfolio {
 	padding:50px 0;
+ 
 }
 
 .section-header {
@@ -374,13 +394,13 @@ button::-moz-focus-inner {
 }
 
 .navbar-toggler-icon {
-	color: #fff !important; \
+	color: #fff !important; 
 	z-index: 1;
 	background-color: red;
 }
 
 .blue {
-	color: #4bcaff;
+	color: #4bcaff !important;
 }
 
 #contact {
