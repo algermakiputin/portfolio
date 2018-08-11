@@ -1,5 +1,9 @@
 $(document).ready(function(){
-
+    $(window).scroll(function() {
+        var elem = $("#home").height();
+        var top = $(this).offset().top();
+        alert(top);
+    })
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
         

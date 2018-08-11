@@ -1,13 +1,39 @@
 
 #main-nav {
 	padding:35px 0;
-	background: rgba(71,82,89,0.85);
+ 	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#home {
+ 
+	
+}
+
+
+
+.video-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+  	overflow: hidden; 
+  	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	min-width:100%;
+     min-height:100%;
+     width:auto;
+     height:auto;
 }
 
 .navbar-brand {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
 .navbar-brand:hover {
@@ -68,8 +94,8 @@ header {
 	background-size: cover;
 	height: 670px;
 	position: relative;
-	background-color: #4a5861;
-}
+	background:inherit;
+ }
 
 header .highlight {
 	position: absolute;
@@ -89,7 +115,7 @@ header .highlight {
 }
 
 header .highlight span {
-	background: rgba(71,82,89,0.70);
+/*	background: rgba(71,82,89,0.70);*/
 	padding: 10px 20px;
 	color: #fff;
 	font-weight: 900;
@@ -97,6 +123,7 @@ header .highlight span {
 	text-transform: uppercase;
 	display: inline-block;
 	margin-bottom: 12px;
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
 
 }
 
@@ -105,14 +132,20 @@ header .highlight span span {
 }
 
 #services {
-
+	
  
-	background-image: url(../images/service-bg.jpg);
+	background-image: url(../images/service-bg.jpg);*/
 	background-position: center;
 	background-repeat: no-repeat;
 	padding: 50px 0;
 	color: #fff;
 	position: relative;
+}
+
+.fixed-top {
+	position: absolute;
+	width: 100%;
+	height: auto;
 }
 
 #services:before {
@@ -121,7 +154,7 @@ header .highlight span span {
 
 #portfolio {
 	padding:50px 0;
- 
+
 }
 
 .section-header {
