@@ -1,45 +1,18 @@
 
 #main-nav {
 	padding:35px 0;
- 	background-color: rgba(0, 0, 0, 0.2);
-}
-
-#home {
- 
-	
-}
-
-
-
-.video-container {
-	width: 100%;
-	height: 100%;
-	position: relative;
-  	overflow: hidden; 
-  	background-color: rgba(0, 0, 0, 0.6);
-}
-
-#video {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	min-width:100%;
-     min-height:100%;
-     width:auto;
-     height:auto;
+	background: rgba(71,82,89,0.85);
 }
 
 .navbar-brand {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
-<<<<<<< HEAD
-<<<<<<< HEAD
-	text-shadow: 0 0 5px rgba(0,0,0,0.5);
-=======
->>>>>>> parent of 855b2d3... update
-=======
->>>>>>> parent of 855b2d3... update
+}
+
+.navbar-brand:hover {
+	color: #fff;
+	opacity: 0.9;
 }
 
 .navbar .nav-item {
@@ -95,8 +68,8 @@ header {
 	background-size: cover;
 	height: 670px;
 	position: relative;
-	background:inherit;
- }
+	background-color: #4a5861;
+}
 
 header .highlight {
 	position: absolute;
@@ -112,28 +85,30 @@ header .highlight {
 
 header .highlight {
 	display: none;
+	min-width: 700px;
 }
 
 header .highlight span {
 /*	background: rgba(71,82,89,0.70);*/
 	padding: 10px 20px;
 	color: #fff;
-	font-weight: 700;
-	font-size: 32px;
+	font-weight: 900;
+	font-size: 34px;
+	text-shadow: 0 0 5px rgba(0,0,0,0.1);
 	text-transform: uppercase;
 	display: inline-block;
 	margin-bottom: 12px;
-	text-shadow: 0 0 5px rgba(0,0,0,0.5);
 
 }
 
+header .highlight span span {
+	padding:10px;
+}
+
 #services {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-	
+
  
-	background-image: url(../images/service-bg.jpg);*/
+	background-image: url(../images/service-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	padding: 50px 0;
@@ -141,43 +116,13 @@ header .highlight span {
 	position: relative;
 }
 
-.fixed-top {
-	position: absolute;
-	width: 100%;
-	height: auto;
-}
-
 #services:before {
 	
-=======
-	background-color: #4bcaff;
-	padding: 50px 0;
-	color: #fff;
->>>>>>> parent of 855b2d3... update
-=======
-	background-color: #4bcaff;
-	padding: 50px 0;
-	color: #fff;
->>>>>>> parent of 855b2d3... update
-=======
-	background-color: #4bcaff;
-	padding: 50px 0;
-	color: #fff;
->>>>>>> parent of 855b2d3... update
 }
 
 #portfolio {
 	padding:50px 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of 855b2d3... update
-=======
->>>>>>> parent of 855b2d3... update
-=======
->>>>>>> parent of 855b2d3... update
+ 
 }
 
 .section-header {
@@ -450,13 +395,13 @@ button::-moz-focus-inner {
 }
 
 .navbar-toggler-icon {
-	color: #fff !important; \
+	color: #fff !important; 
 	z-index: 1;
 	background-color: red;
 }
 
 .blue {
-	color: #4bcaff;
+	color: #4bcaff !important;
 }
 
 #contact {
