@@ -31,7 +31,10 @@ function initialize() {
       else   {
         $(".navbar").removeClass('navbar-fixed-top');
         $("#totop").hide();  
+
       }
+
+    
 
       lastScroll = win;
 
