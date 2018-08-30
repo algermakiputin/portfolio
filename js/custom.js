@@ -29,9 +29,12 @@ function initialize() {
         }
       }
       else   {
+        $(".navbar").css('opacity','0');
         $(".navbar").removeClass('navbar-fixed-top');
         $("#totop").hide();  
-
+        if (win === 0) {
+          $(".navbar").css('opacity','1');
+        }
       }
 
     

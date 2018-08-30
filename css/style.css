@@ -10,7 +10,10 @@ http://www.tooplate.com/view/2081-solution
    height: 30px;background-color: #000;
 }
 
- 
+.navbar.navbar-fixed-top {
+    opacity: 1 !important;
+    transition: opacity 0.20s ease-in;
+}
 
 #totop {
     height: 35px;
