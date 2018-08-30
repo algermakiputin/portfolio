@@ -159,6 +159,7 @@ jQuery(document).ready(function($){
 
   }
 
+   $(".bg-loader").hide();
 });
 
 // Hide mobile menu after clicking on a link
