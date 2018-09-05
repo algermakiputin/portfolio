@@ -58,21 +58,21 @@ function counter(top,win,started) {
   
   $('#line-code').animationCounter({
     start:0,
-    end:12750,
+    end:32750,
     delay: 60,
     step: 210
   })
 
   $('#cup-coffee').animationCounter({
     start:0,
-    end:899,
+    end:1899,
     delay: 60,
     step: 20
   })
 
   $('#nighter').animationCounter({
     start:0,
-    end:355,
+    end:755,
     delay: 60,
     step:10
   })
