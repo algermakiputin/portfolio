@@ -48,6 +48,10 @@ body {
     background: inherit;
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     display: none;
+
+}
+#totop:hover {
+    cursor: pointer;
 }
 
 #totop .fa {
@@ -98,8 +102,8 @@ p
 #service, #divider, #about, #team, #newsletter,
  #pricing, #portfolio, #client, #contact
     {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 140px;
+        padding-bottom: 140px;
         position: relative;
     }
 /* end all section */

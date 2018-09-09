@@ -99,14 +99,48 @@ $(function(){
   new WOW().init();
 
   // Magnific Pop up for Portfolio section
-  $('.portfolio-container').magnificPopup({
-    delegate: '.portfolio-popup', // child items selector, by clicking on it popup will open
-    type: 'image',
-    gallery: {
-      enabled: false
-    }    
-  });
+  $('.portfolio-thumb').each(function() {
+      $(this).magnificPopup({
+        delegate: '.portfolio-popup', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {
+          enabled: true
+        }    
+      });
+  })
 
+    $('.video').each(function() {
+        $(this).magnificPopup({
+  type: 'iframe',
+  
+  
+  iframe: {
+    patterns: {
+      dailymotion: {
+       
+        index: 'dailymotion.com',
+        
+        id: function(url) {        
+            var m = url.match(/^.+dailymotion.com\/(video|hub)\/([^_]+)[^#]*(#video=([^_&]+))?/);
+            if (m !== null) {
+                if(m[4] !== undefined) {
+                  
+                    return m[4];
+                }
+                return m[2];
+            }
+            return null;
+        },
+        
+        src: 'https://www.dailymotion.com/embed/video/%id%'
+        
+      }
+    }
+  }
+    })
+  
+  
+});
   loadGoogleMap();
 });
 
