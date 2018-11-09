@@ -3,9 +3,15 @@
 var map = '';
 var center;
 
-function initialize() {
-    
-    
+function initialize() { 
+    $("body").niceScroll({
+       cursorcolor: "#93ca3a",
+       cursorwidth : "12px",
+       zindex : "999",
+       background : "#eee",
+       scrollspeed : 40,
+       mousescrollstep: 30
+    });
     var started = 0;
     var lastScroll = 0;
     var top = $("#divider").offset().top - window.innerHeight;
