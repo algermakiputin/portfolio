@@ -41,7 +41,11 @@ body {
 
 .navbar.navbar-fixed-top {
     opacity: 1 !important;
-    transition: opacity 0.20s ease-in;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+     opacity: 1;
 }
 
 #totop {

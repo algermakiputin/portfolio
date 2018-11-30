@@ -15,38 +15,38 @@ function initialize() {
     var started = 0;
     var lastScroll = 0;
     var top = $("#divider").offset().top - window.innerHeight;
-
+    var width = $(document).width();
+    if (width < 780) {
+        $(".navbar").addClass('navbar-fixed-top');
+    }
     $(window).scroll(function(event) {
-        
-      
-        var win = $(window).scrollTop();
-        
-          
 
-          if (top < win && started === 0) {
+        if (width > 980) {
+            var win = $(window).scrollTop();
+
+            if (top < win && started === 0) {
               started = 1;
               counter();
-          }
+            }
 
-
-          if (win < lastScroll && win !== 0) {
-              $(".navbar").addClass('navbar-fixed-top');
+            if (win < lastScroll && win !== 0) {
+              $(".navbar").addClass('navbar-fixed-top'); 
               if (lastScroll > 700) {
                   $('#totop').show();
               } else {
                   $("#totop").hide();
               }
-          } else {
+            } else {
               $(".navbar").css('opacity', '0');
               $(".navbar").removeClass('navbar-fixed-top');
               $("#totop").hide();
               if (win === 0) {
                   $(".navbar").css('opacity', '1');
               }
-          }
+            }
 
-          lastScroll = win;
-       
+            lastScroll = win;
+        }
 
 
     })
