@@ -16,11 +16,15 @@ function initialize() {
     var lastScroll = 0;
     var top = $("#divider").offset().top - window.innerHeight;
     var width = $(document).width();
-    if (width < 780) {
-        $(".navbar").addClass('navbar-fixed-top');
-    }
-    $(window).scroll(function(event) {
 
+    $(window).scroll(function(evtent) {
+        if ($(window).scrollTop() > 100 && width < 780) {
+         
+                $(".navbar").addClass('navbar-fixed-top');
+           
+        }else {
+            $(".navbar").removeClass('navbar-fixed-top');
+        }
         if (width > 980) {
             var win = $(window).scrollTop();
 
