@@ -18,13 +18,7 @@ function initialize() {
     var width = $(document).width();
 
     $(window).scroll(function(evtent) {
-        if ($(window).scrollTop() > 100 && width < 780) {
-         
-                $(".navbar").addClass('navbar-fixed-top');
-           
-        }else {
-            $(".navbar").removeClass('navbar-fixed-top');
-        }
+        
         if (width > 980) {
             var win = $(window).scrollTop();
 
@@ -34,6 +28,7 @@ function initialize() {
             }
 
             if (win < lastScroll && win !== 0) {
+
               $(".navbar").addClass('navbar-fixed-top'); 
               if (lastScroll > 700) {
                   $('#totop').show();
@@ -41,6 +36,7 @@ function initialize() {
                   $("#totop").hide();
               }
             } else {
+
               $(".navbar").css('opacity', '0');
               $(".navbar").removeClass('navbar-fixed-top');
               $("#totop").hide();
@@ -50,6 +46,14 @@ function initialize() {
             }
 
             lastScroll = win;
+        }else {
+            if ($(window).scrollTop() > 100 && width < 780) {
+             
+                    $(".navbar").addClass('navbar-fixed-top');
+               
+            }else {
+                $(".navbar").removeClass('navbar-fixed-top');
+            }
         }
 
 
