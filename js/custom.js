@@ -14,18 +14,29 @@ function initialize() {
     });
     var started = 0;
     var lastScroll = 0;
+    var counted = 0;
     var top = $("#divider").offset().top - window.innerHeight;
     var width = $(document).width();
-
+    
+ 
     $(window).scroll(function(evtent) {
-        
+        var countOffset = $(".counter").offset().top - 500;
+        var win = $(window).scrollTop();
+
+        if (win >= countOffset && !counted) {
+            counter();
+            counted = 1;
+        }
+
         if (width > 980) {
-            var win = $(window).scrollTop();
+            
 
             if (top < win && started === 0) {
               started = 1;
-              counter();
+              
             }
+
+            
 
             if (win < lastScroll && win !== 0) {
 
