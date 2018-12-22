@@ -22,7 +22,7 @@ function initialize() {
     }
     
     $(window).scroll(function(evtent) {
-        var countOffset = $(".counter").offset().top - 500;
+        var countOffset = $(".counts").offset().top - 700;
         var win = $(window).scrollTop();
 
         if (win >= countOffset && !counted) {

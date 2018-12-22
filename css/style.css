@@ -8,7 +8,17 @@
         margin-top: 115px;
     }
     
-} 
+}
+
+@media only screen and (min-width: 1600px) {
+    .navbar-default .navbar-nav li a {
+        font-size : 14px !important;
+    }
+
+    .navbar-brand {
+        font-size : 20px;
+    }
+}
    
   
 
