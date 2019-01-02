@@ -1,4 +1,5 @@
 @media only screen and (max-width: 600px) {
+
     .filter-wrapper {
         margin:0 0 0 0 !important;
         padding: 0;
@@ -11,12 +12,29 @@
 }
 
 @media only screen and (min-width: 1600px) {
+
+    body {
+        font-size: 16px;
+    }
+
     .navbar-default .navbar-nav li a {
-        font-size : 14px !important;
+        font-size : 14.5px !important;
     }
 
     .navbar-brand {
         font-size : 20px;
+    }
+
+    .templatemo_homewrapper h1 {
+        font-size: 37px;
+    }
+
+    .templatemo_homewrapper h2 {
+        font-size: 32px;
+    }
+
+    #divider {
+        padding: 200px 0 !important;
     }
 }
    

@@ -21,7 +21,7 @@ function initialize() {
         });
     }
     
-    $(window).scroll(function(evtent) {
+    $(window).scroll(function(event) {
         var countOffset = $(".counts").offset().top - 700;
         var win = $(window).scrollTop();
 
