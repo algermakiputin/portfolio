@@ -8,6 +8,16 @@
     .templatemo_homewrapper {
         margin-top: 115px;
     }
+
+    .templatemo_homewrapper a {
+        font-size: 12px;
+        padding: 10px !important;
+        height: inherit !important;
+        width: inherit !important;
+        color: #93ca3a !important;
+        background: #fff !important;
+    }
+
     
 }
 
@@ -16,6 +26,7 @@
     body {
         font-size: 16px;
     }
+
 
     .navbar-default .navbar-nav li a {
         font-size : 14.5px !important;
