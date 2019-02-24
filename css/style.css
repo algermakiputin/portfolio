@@ -21,6 +21,12 @@
     
 }
 
+@media only screen and (max-width:  480px) {
+    .flexslider .btn {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 1600px) {
 
     body {
@@ -296,6 +302,7 @@ p
 .flexslider .btn
 {
     background: #93ca3a;
+  
     border-radius: 0;
     border: 2px solid transparent;
     color: #FFFFFF;
@@ -304,8 +311,10 @@ p
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     height: 50px;
-    width: 250px;
+    width: 180px;
     padding: 12px 10px 10px 10px;
+
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .5);
 }
 .flexslider .btn:hover,
 .flexslider .btn:focus {
