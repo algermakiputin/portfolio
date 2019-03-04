@@ -99,8 +99,8 @@ jQuery(document).ready(function($) {
             cursorwidth: "12px",
             zindex: "999",
             background: "#eee",
-            scrollspeed: 30,
-            mousescrollstep: 40
+            scrollspeed: 25,
+            mousescrollstep: 20
         });
     }
     
