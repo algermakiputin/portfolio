@@ -98,9 +98,7 @@ jQuery(document).ready(function($) {
             cursorcolor: "#93ca3a",
             cursorwidth: "12px",
             zindex: "999",
-            background: "#eee",
-            scrollspeed: 25,
-            mousescrollstep: 20
+            background: "#eee"
         });
     }
     
