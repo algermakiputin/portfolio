@@ -5,34 +5,20 @@
         padding: 0;
     }
 
-    .templatemo_homewrapper {
-        margin-top: 115px;
-    }
-
-    .templatemo_homewrapper a {
-        font-size: 12px;
-        padding: 10px !important;
+    .templatemo_homewrapper a { 
         height: inherit !important;
-        width: inherit !important;
-        color: #93ca3a !important;
-        background: #fff !important;
-    }
-
+        width: inherit !important; 
+     
+    }  
     
 }
-
-@media only screen and (max-width:  480px) {
-    .flexslider .btn {
-        display: none;
-    }
-}
+ 
 
 @media only screen and (min-width: 1600px) {
 
-    body {
-        font-size: 16px;
+    .templatemo_homewrapper h1 {
+        text-shadow: 0 0 3px 5px rgba(0, 0, 0, .5);
     }
-
 
     .navbar-default .navbar-nav li a {
         font-size : 14.5px !important;
@@ -43,11 +29,13 @@
     }
 
     .templatemo_homewrapper h1 {
-        font-size: 37px;
+        font-size: 48px;
+        color: #93ca3a;
     }
 
     .templatemo_homewrapper h2 {
-        font-size: 32px;
+        font-size: 42px;
+        color: #93ca3a;
     }
 
     #divider {
@@ -802,21 +790,34 @@ footer .social-icon
         height: 60px;
         margin-top: -2.5px;
     }
-    .flexslider h1 { font-size: 26px; }
-    .flexslider h2 { font-size: 18px; }
-    .templatemo-slider-btn { 
-        margin-top: 10px; 
-        width: 180px;
-        height: 40px;
-        padding-top: 8px;
-    }
+    
 }
 /* end templatemo 768 media quires */
 
 /* start templatemo 600 media quires */
-@media only screen and ( max-width: 640px ) {   
-    .flexslider h1 { font-size: 20px; }
-    .flexslider h2 { font-size: 14px; }
+@media only screen and ( max-width: 640px ) {  
+
+   /* .templatemo_homewrapper {
+        background: rgb(0,0,0,.5);
+        padding: 15px 20px;
+    
+    } */
+    .flexslider h1 { 
+        font-size: 28px !important;
+        color: #fff;
+    } 
+    
+    .flexslider h2 { 
+        font-size: 18px !important;   
+        color: #fff   !important; 
+    }
+    
+
+    .flexslider .btn {
+        box-shadow: 0 1px rgba(0,0,0,0.1);
+        margin-top: 10px;
+      
+    }
     .templatemo-slider-btn {
         width: auto;
         height: auto;
@@ -837,9 +838,11 @@ footer .social-icon
         font-size: 35px;
         font-weight: bold;
     }  
+
+
 }
 /* end templatemo 600 media quires */
-
+ 
 /* start templatemo 360 media quires */
 @media only screen and ( max-width: 360px ) {
     .navbar-default .navbar-brand img {

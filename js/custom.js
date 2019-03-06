@@ -93,15 +93,14 @@ jQuery(document).ready(function($) {
     var top = $("#divider").offset().top - window.innerHeight;
     var width = $(document).width();
    
-    if (width > 768) {
-        $("body").niceScroll({
-            cursorcolor: "#93ca3a",
-            cursorwidth: "12px",
-            zindex: "999",
-            background: "#eee"
-        });
-    }
-    
+ 
+    $("body").niceScroll({
+        cursorcolor: "#93ca3a",
+        cursorwidth: "12px",
+        zindex: "999",
+        background: "#eee"
+    });
+  
     
     $(window).scroll(function(event) {
         var countOffset = $(".counts").offset().top - 700;
