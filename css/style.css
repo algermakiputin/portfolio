@@ -810,6 +810,10 @@ footer .social-icon
         font-size: 28px !important;
         color: #fff;
     } 
+
+    #divider {
+        padding: 80px 0;
+    }
     
     .flexslider h2 { 
         font-size: 18px !important;   

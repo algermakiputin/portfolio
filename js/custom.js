@@ -94,12 +94,14 @@ jQuery(document).ready(function($) {
     var width = $(document).width();
    
  
-    $("body").niceScroll({
-        cursorcolor: "#93ca3a",
-        cursorwidth: "12px",
-        zindex: "999",
-        background: "#eee"
-    });
+    if (width > 600) {
+        $("body").niceScroll({
+            cursorcolor: "#93ca3a",
+            cursorwidth: "12px",
+            zindex: "999",
+            background: "#eee"
+        });
+    }
   
     
     $(window).scroll(function(event) {
