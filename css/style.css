@@ -802,6 +802,10 @@ footer .social-icon
         padding: 15px 20px;
     
     } */
+
+    #about {
+        padding-top: 30px;
+    }
     .flexslider h1 { 
         font-size: 28px !important;
         color: #fff;
