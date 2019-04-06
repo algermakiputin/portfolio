@@ -1,50 +1,13 @@
-@media only screen and (max-width: 600px) {
-
-    .filter-wrapper {
-        margin:0 0 0 0 !important;
-        padding: 0;
-    }
-
-    .templatemo_homewrapper a { 
-        height: inherit !important;
-        width: inherit !important; 
-     
-    }  
-    
-}
-
-p {
-    font-size: 1.2em;
-}
- 
-
-
-/*
-@media only screen and (min-width: 1600px) {
-
-    .templatemo_homewrapper h1 {
-        text-shadow: 0 0 3px 5px rgba(0, 0, 0, .5);
-    }
-
-    .navbar-default .navbar-nav li a {
-        font-size : 14.5px !important;
-    }
-
-    .navbar-brand {
-        font-size : 20px;
-    }
-
-    #divider {
-        padding: 200px 0 !important;
-    }
-}*/
-   
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+/* font for headings, text, tags */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800);
   
 
 body {
     position: relative;
     width: 100%;
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 .bg-loader .text {
   position: fixed;
@@ -129,7 +92,7 @@ body {
 body
 {
 	background: #ffffff;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
     position: relative;
 	}
@@ -299,16 +262,20 @@ p
 }
 
 #about-btn:hover {
-     background: #fff;
-    color: #93ca3a;
+     box-shadow: 0 0 2px #93ca3a;
     border: 2px solid transparent;
+    transition: box-shadow 0.5s;
 }
 
 #portfolio-btn:hover {
-    background: #93ca3a;
-    color: #FFFFFF;
+    box-shadow: 0 0 2px #fff;
     border: 2px solid transparent;
+    transition: box-shadow 0.5s;
 }
+/*.raise:hover,
+.raise:focus {
+  
+}*/
 #portfolio-btn {
     background: #fff;
     color: #93ca3a;
@@ -870,4 +837,22 @@ footer .social-icon
         font-weight: bold;
     } 
 }
-/* end templatemo 360 media quires */
+
+@media only screen and (max-width: 600px) {
+
+    .filter-wrapper {
+        margin:0 0 0 0 !important;
+        padding: 0;
+    }
+
+    .templatemo_homewrapper a { 
+        height: inherit !important;
+        width: inherit !important; 
+     
+    }  
+    
+}
+
+p {
+    font-size: 1.2em;
+} 
