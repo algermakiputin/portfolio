@@ -1,5 +1,5 @@
 
- 
+
 
 class Topnav extends React.Component {
 	render () {
@@ -64,7 +64,7 @@ class Header extends React.Component {
 					<div className="flexslider">
 						<ul className="slides">
 							<li>
-								<img src={"images/slider/hello.jpg"} id="img1" />
+								<img src={("images/slider/hello.jpg")} id="img1" />
 								<div className="slider-caption">
 									<div className="templatemo_homewrapper">
 										<h1 className="wow fadeInDown" data-wow-delay="2000">My Name is Alger </h1>

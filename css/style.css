@@ -257,8 +257,7 @@ p
     transition: all 0.4s ease-in-out;
     height: 50px;
     width: 180px;
-    padding: 12px 10px 10px 10px;
-    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .5);
+    padding: 12px 10px 10px 10px; 
 }
 
 #about-btn:hover {
@@ -779,14 +778,15 @@ footer .social-icon
     }
     
     .flexslider h2 { 
-        font-size: 1em !important;   
+        font-size: 1.3em !important;   
         color: #fff   !important; 
+        margin: 0 0 5px 0;
     }
     
 
     .flexslider .btn {
         box-shadow: 0 1px rgba(0,0,0,0.1);
-        margin-top: 10px;
+        
       
     }
     .templatemo-slider-btn {
@@ -836,8 +836,25 @@ footer .social-icon
         font-size: 2.5em;
         font-weight: bold;
     } 
+
+    #portfolio-btn {
+        display: none;
+    }
+
+    #about-btn {
+
+    }
 }
 
+@media only screen and (max-width: 1920px) {
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+}
 @media only screen and (max-width: 600px) {
 
     .filter-wrapper {
