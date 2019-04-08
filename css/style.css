@@ -733,7 +733,15 @@ footer .social-icon
         background: #f2f2f2;
     }
 /* end social icon */
+@media only screen and (max-width: 1920px) {
+    .templatemo_homewrapper h2 {
+        font-size: 2.5em;
+    }
 
+    .templatemo_homewrapper h1 {
+        font-size: 2.5em;
+    }
+}
 @media only screen and (max-width: 1199px) {
     .flexslider h1 { font-size: 2em; }
     .flexslider h2 { font-size: 1.5em; }
@@ -758,7 +766,16 @@ footer .social-icon
 
 /* start templatemo 600 media quires */
 @media only screen and ( max-width: 640px ) {  
+    .filter-wrapper {
+        margin:0 0 0 0;
+        padding: 0;
+    }
 
+    .templatemo_homewrapper a { 
+        height: inherit;
+        width: inherit ; 
+     
+    }  
    #service, #divider, #about, #team, #newsletter, #pricing, #portfolio, #client, #contact {
     padding: 30px 0;
    }
@@ -771,7 +788,7 @@ footer .social-icon
         padding-top: 30px;
     }
     .flexslider h1 { 
-        font-size: 1.5em !important;
+        font-size: 1.5em;
         color: #fff;
     } 
 
@@ -780,16 +797,15 @@ footer .social-icon
     }
     
     .flexslider h2 { 
-        font-size: 1.3em !important;   
-        color: #fff   !important; 
+        font-size: 1.3em ;   
+        color: #fff; 
         margin: 0 0 5px 0;
     }
     
 
     .flexslider .btn {
         box-shadow: 0 1px rgba(0,0,0,0.1);
-        
-      
+        width: 150px;
     }
 
     .footer-text {
@@ -816,10 +832,28 @@ footer .social-icon
         font-weight: bold;
     }  
 
+    h1 {
+        font-size: 
+    }
+
 
 }
 /* end templatemo 600 media quires */
- 
+@media only screen and (max-width: 425px) {
+    .templatemo_homewrapper h2 {
+        font-size: 1.5em;
+        text-shadow:  0 0 rgba(0,0,0,1.5);
+    }
+
+    .templatemo_homewrapper h1 {
+        font-size: 1.8em;
+        text-shadow: 0 0  rgba(0,0,0,1.5);
+    }
+
+    #about h3 {
+        font-size: 2em;
+    }
+}
 /* start templatemo 360 media quires */
 @media only screen and ( max-width: 360px ) {
     .navbar-default .navbar-brand img {
@@ -848,36 +882,34 @@ footer .social-icon
     }
 
     #about-btn {
-
+        width: 200px;
     }
-}
 
-@media only screen and (max-width: 1920px) {
     .templatemo_homewrapper h2 {
-        font-size: 2.5em;
+        font-size: 1.9em;
+        text-shadow:  0 0 rgba(0,0,0,1.5);
     }
 
     .templatemo_homewrapper h1 {
-        font-size: 2.5em;
-    }
-}
-@media only screen and (max-width: 600px) {
-
-    .filter-wrapper {
-        margin:0 0 0 0 !important;
-        padding: 0;
+        font-size: 1.7em;
+        text-shadow: 0 0  rgba(0,0,0,1.5);
     }
 
-    .templatemo_homewrapper a { 
-        height: inherit !important;
-        width: inherit !important; 
-     
-    }  
 
 
-    
+    #about h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
 }
 
-p {
-    font-size: 1.2em;
-} 
+
+ 
+
