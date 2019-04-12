@@ -81,7 +81,7 @@ $(function() {
 
 
     });
-    
+ 
 });
 
 // isotope
@@ -92,8 +92,8 @@ jQuery(document).ready(function($) {
     var counted = 0;
     var top = $("#divider").offset().top - window.innerHeight;
     var width = $(document).width();
-    
-    
+   
+ 
     if (width > 600) {
         $("body").niceScroll({
             cursorcolor: "#93ca3a",
@@ -102,7 +102,7 @@ jQuery(document).ready(function($) {
             background: "#eee"
         });
     }
-    
+  
     
     $(window).scroll(function(event) {
         var countOffset = $(".counts").offset().top - 700;
@@ -128,33 +128,35 @@ jQuery(document).ready(function($) {
               $(".navbar").addClass('navbar-fixed-top');
               if (lastScroll > 700) {
                   $('#totop').show();
-              }  
-              $("#totop").hide();
-              
-          } else {
+              } else {
+                  $("#totop").hide();
+              }
+
+            } else {
 
               $(".navbar").css('opacity', '0');
               $(".navbar").removeClass('navbar-fixed-top');
+              
               
               $("#totop").hide();
               if (win === 0) {
                   $(".navbar").css('opacity', '1');
               }
-          }
+            }
 
-          lastScroll = win;
-      }else {
-        if ($(window).scrollTop() > 100 && width < 780) {
-           
-            $(".navbar").addClass('navbar-fixed-top');
-            
+            lastScroll = win;
         }else {
-            $(".navbar").removeClass('navbar-fixed-top');
+            if ($(window).scrollTop() > 100 && width < 780) {
+             
+                    $(".navbar").addClass('navbar-fixed-top');
+               
+            }else {
+                $(".navbar").removeClass('navbar-fixed-top');
+            }
         }
-    }
 
 
-})
+    })
 
     $("#totop").click(function() {
         $('body,html').animate({
@@ -165,7 +167,7 @@ jQuery(document).ready(function($) {
     if ($('.iso-box-wrapper').length > 0) {
 
         var $container = $('.iso-box-wrapper'),
-        $imgs = $('.iso-box img');
+            $imgs = $('.iso-box img');
 
         $container.imagesLoaded(function() {
 
@@ -184,7 +186,7 @@ jQuery(document).ready(function($) {
         $('.filter-wrapper li a').click(function() {
 
             var $this = $(this),
-            filterValue = $this.attr('data-filter');
+                filterValue = $this.attr('data-filter');
 
             $container.isotope({
                 filter: filterValue,
