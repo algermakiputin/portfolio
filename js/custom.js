@@ -115,27 +115,35 @@ jQuery(document).ready(function($) {
             counted = 1;
         }
 
+        if (win == 0) {
+            $("#top-header").removeClass('top-header-noheight');
+            $("#top-header").addClass('top-header-withheight'); 
+        }else {
+            $("#top-header").removeClass('top-header-withheight'); 
+            $("#top-header").addClass('top-header-noheight');
+        }
+
         if (width > 980) {
             
-
-            if (top < win && started === 0) {
-
-              started = 1;
-              
-            }
+            started = top < win && started === 0;
+            
 
             if (win < lastScroll && win !== 0) {
+              $(".navbar").addClass('navbar-fixed-top');
+              
 
-              $(".navbar").addClass('navbar-fixed-top'); 
               if (lastScroll > 700) {
                   $('#totop').show();
               } else {
                   $("#totop").hide();
               }
+
             } else {
 
               $(".navbar").css('opacity', '0');
               $(".navbar").removeClass('navbar-fixed-top');
+              
+              
               $("#totop").hide();
               if (win === 0) {
                   $(".navbar").css('opacity', '1');

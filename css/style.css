@@ -32,7 +32,7 @@ body {
 }
 
 #top-header {
-   height: 30px;background-color: #000;
+   background-color: #000;
 }
 
 .navbar.navbar-fixed-top {
@@ -42,6 +42,15 @@ body {
     -ms-transition: opacity 0.2s ease-in-out;
     -o-transition: opacity 0.2s ease-in-out;
      opacity: 1;
+}
+
+.top-header-noheight {
+    height: 0;
+}
+
+.top-header-withheight {
+    height: 30px;
+    transition: height 0.30s;
 }
 
 #totop {
@@ -743,8 +752,8 @@ footer .social-icon
     }
 }
 @media only screen and (max-width: 1199px) {
-    .flexslider h1 { font-size: 2em; }
-    .flexslider h2 { font-size: 1.5em; }
+    .flexslider h1 { font-size: 2.2em; }
+    .flexslider h2 { font-size: 2.2em; }
 }
 
 /* start templatemo 768 media quires */
@@ -760,6 +769,9 @@ footer .social-icon
         height: 60px;
         margin-top: -2.5px;
     }
+
+    .flexslider h1 { font-size: 2em; }
+    .flexslider h2 { font-size: 2em; }
     
 }
 /* end templatemo 768 media quires */
