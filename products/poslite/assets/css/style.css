@@ -1,0 +1,63 @@
+* {
+	font-family: "Source Sans Pro"
+}
+.navbar-brand {
+	color: #fff;
+	font-weight: bold; 
+}
+/*Header Starts*/
+header {
+	background-color : #333;
+	background-image: url('../images/16952.jpg');
+	background-size: cover;
+	background-position: top;
+	height: 750px;
+}
+
+header .caption {
+	padding: 200px 0;
+	color: #fff;
+}
+
+.caption h1 {
+	font-weight: bold;
+
+}
+
+.caption button {
+	padding: 10px 50px;
+}
+
+header .featured-image {
+	width:740px;
+	margin-left: 50px;
+	margin-top: 186.5px;
+}
+
+/*Header ends*/
+
+section h1 {
+	font-size: 2.5em;
+	font-weight: 600;
+
+}
+
+.section-header {
+	margin: 0 0 60px 0;
+	text-align: center;
+}
+
+section {
+	padding: 70px 0 140px 0; 
+}
+
+.feature {
+	min-height: 200px;
+	background: #333;
+	margin-bottom: 10px;
+}
+
+#clients {
+	background: #333;
+	min-height: 550px;
+}
