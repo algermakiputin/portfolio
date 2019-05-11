@@ -96,11 +96,13 @@ jQuery(document).ready(function($) {
  
     if (width > 600) {
         $("body").niceScroll({
+            preservenativescrolling : false,
+            autohide : false,
             cursorcolor: "#93ca3a",
             cursorwidth: "12px",
             zindex: "999",
             background: "#eee"
-        });
+        }).hide();
     }
   
     

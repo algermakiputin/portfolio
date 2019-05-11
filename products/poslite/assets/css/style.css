@@ -12,11 +12,17 @@ header {
 	background-size: cover;
 	background-position: top;
 	height: 750px;
+	box-shadow: 0 0 12px rgba(0,0,0,0.5);
 }
 
 header .caption {
 	padding: 200px 0;
 	color: #fff;
+}
+
+button.start {
+	font-weight: bold;
+	border-radius: 5px; 
 }
 
 .caption h1 {
@@ -36,6 +42,31 @@ header .featured-image {
 
 /*Header ends*/
 
+/*Key Features Start*/
+.key-feature-col {
+	background-color: #228efd;
+	min-height: 100px;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.key-feature-col.second {
+	background-color: #fd7622;
+}
+.key-feature-col.third {
+	background-color: #fd2259;
+}
+
+.key-feature-col .text {
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+}
+/*Key Features End*/
+
 section h1 {
 	font-size: 2.5em;
 	font-weight: 600;
@@ -43,21 +74,79 @@ section h1 {
 }
 
 .section-header {
-	margin: 0 0 60px 0;
+	margin: 0 0 15px 0;
 	text-align: center;
 }
 
 section {
-	padding: 70px 0 140px 0; 
+	padding: 80px;
 }
 
+/*Features Start*/
+.feature-header {
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.feature-body {
+	font-size: 1em;
+	font-weight: 500;
+}
 .feature {
-	min-height: 200px;
-	background: #333;
+	text-align: left;
 	margin-bottom: 10px;
+	padding: 20px 0px;
+}
+/*Features End*/
+
+#divider {
+	background-color: #333;
+	min-height: 250px;
+	background-image: url('../images/16952.jpg');
+	background-size: cover;
+	background-position: top;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#divider h1 {
+	color: #fff;
+}
+/*Start Clients*/
+#clients {
+	background-color: #333;
+	background-image: url('../images/bg.jpg');
+	background-size:cover;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	background-position: center;
+
+}
+.client-review {
+	color: #fff;
+	text-align: center;
 }
 
-#clients {
-	background: #333;
-	min-height: 550px;
+#clients .section-header {
+	color: #fff;
 }
+.review-header {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	color: #f4f4f5;
+}
+.author-name {
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 14.5px;
+	color: #f4f4f5;
+}
+.review-body {
+	padding: 20px 20px;
+	font-size: 16px;
+}
+.review-body p {
+	margin: 0 0 10px 0;
+	color: #eee;
+}
+/*End clients*/
