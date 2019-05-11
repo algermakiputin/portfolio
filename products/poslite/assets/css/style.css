@@ -4,7 +4,7 @@
 .navbar-brand {
 	color: #fff;
 	font-weight: bold; 
-}
+} 
 /*Header Starts*/
 header {
 	background-color : #333;
@@ -35,9 +35,7 @@ button.start {
 }
 
 header .featured-image {
-	width:740px;
-	margin-left: 50px;
-	margin-top: 186.5px;
+	position: absolute;width: 111.2%;height: auto;bottom: -107px;left: 65px;
 }
 
 /*Header ends*/
