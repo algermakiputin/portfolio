@@ -38,6 +38,7 @@ $(function() {
 
     new WOW().init();
 
+    
     // Magnific Pop up for Portfolio section
     $('.portfolio-thumb').each(function() {
         $(this).magnificPopup({
@@ -95,17 +96,28 @@ jQuery(document).ready(function($) {
    
  
     if (width > 600) {
-        $("body").niceScroll({
-            preservenativescrolling : false,
-            autohide : false,
-            cursorcolor: "#93ca3a",
-            cursorwidth: "12px",
-            zindex: "999",
-            background: "#eee"
+        $("body").niceScroll({ 
+            cursorcolor:        "#93ca3a",
+            cursorwidth:        "12px",
+            cursorborder:       "0px solid #000",
+            scrollspeed:        60,
+            autohidemode:       true,
+            background:         '#ddd',
+            hidecursordelay:    400,
+            cursorfixedheight:  false,
+            cursorminheight:    20,
+            enablekeyboard:     true,
+            horizrailenabled:   true,
+            bouncescroll:       false,
+            smoothscroll:       true,
+            iframeautoresize:   true,
+            touchbehavior:      false,
+            zindex: 999
         }).hide();
     }
   
     
+   
     $(window).scroll(function(event) {
         var countOffset = $(".counts").offset().top - 700;
         var win = $(window).scrollTop();
