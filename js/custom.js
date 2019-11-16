@@ -95,26 +95,26 @@ jQuery(document).ready(function($) {
     var width = $(document).width();
    
  
-    if (width > 600) {
-        $("body").niceScroll({ 
-            cursorcolor:        "#93ca3a",
-            cursorwidth:        "12px",
-            cursorborder:       "0px solid #000",
-            scrollspeed:        60,
-            autohidemode:       true,
-            background:         '#ddd',
-            hidecursordelay:    400,
-            cursorfixedheight:  false,
-            cursorminheight:    20,
-            enablekeyboard:     true,
-            horizrailenabled:   true,
-            bouncescroll:       false,
-            smoothscroll:       true,
-            iframeautoresize:   true,
-            touchbehavior:      false,
-            zindex: 999
-        }).hide();
-    }
+    // if (width > 600) {
+    //     $("body").niceScroll({ 
+    //         cursorcolor:        "#93ca3a",
+    //         cursorwidth:        "12px",
+    //         cursorborder:       "0px solid #000",
+    //         scrollspeed:        60,
+    //         autohidemode:       true,
+    //         background:         '#ddd',
+    //         hidecursordelay:    400,
+    //         cursorfixedheight:  false,
+    //         cursorminheight:    20,
+    //         enablekeyboard:     true,
+    //         horizrailenabled:   true,
+    //         bouncescroll:       false,
+    //         smoothscroll:       true,
+    //         iframeautoresize:   true,
+    //         touchbehavior:      false,
+    //         zindex: 999
+    //     }).hide();
+    // }
   
     
    
