@@ -122,10 +122,13 @@ p
 #service, #divider, #about, #team, #newsletter,
  #pricing, #portfolio, #client, #contact
     {
-        padding-top: 140px;
-        padding-bottom: 140px;
+        padding-top: 145px;
+        padding-bottom: 145px;
         position: relative;
     }
+#divider {
+    padding: 220px 0;
+}
 /* end all section */
 
 /* start nagivation */
