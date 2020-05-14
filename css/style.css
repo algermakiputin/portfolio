@@ -346,6 +346,8 @@ p
         font-size: 40px;
         padding-bottom: 10px;
     }
+
+
 #about h4
     {
         padding-bottom: 10px;
@@ -410,6 +412,12 @@ p
         padding-top: 20px;
         line-height: 0px;
     }
+
+@media only screen and (min-width: 769px) {
+    #about .col-md-7 article {
+        padding-right: 50px;
+    }
+}
 /* end team */
 
 /* start newsletter */
