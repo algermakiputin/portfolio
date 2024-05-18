@@ -14,14 +14,13 @@
     // PROJECT CAROUSEL
     $('.owl-carousel').owlCarousel({
     	items: 1,
-	    loop:true,
-	    margin:10,
+	    loop:true, 
 	    nav:true
 	});
 
     // SMOOTHSCROLL
     $(function() {
-      $('.nav-link, .custom-btn-link').on('click', function(event) {
+      $('.nav-link, .custom-btn-link, .custom-btn').on('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 49

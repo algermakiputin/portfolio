@@ -40,7 +40,7 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #ffc200 !important;
+  color: #6fc183 !important;
 }
 
 .navbar-brand .uil {
@@ -116,7 +116,7 @@ b, strong {
 }
 
 .animated-item {
-  color: #ffc200;
+  color: #6fc183;
 }
 
 .animated-item {
@@ -335,7 +335,7 @@ b, strong {
 }
 
 .timeline-yr {
-  background: #474559;
+  background: #6fc183;
   border-radius: 100%;
   position: absolute;
   width: 75px;
@@ -433,7 +433,7 @@ b, strong {
   border-color: #ffc200;
 }
 .contact-form .submit-btn {
-  background: #ffc200;
+  background: #6fc183;
   border-radius: 50px;
   color: #ffffff;
   font-weight: bold;
@@ -464,6 +464,22 @@ b, strong {
 .social-links .uil:hover {
   color: #ffc200;
 }
+
+.project-wrapper  {
+  padding: 0 40px;
+} 
+
+.project-summary { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+} 
 
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
