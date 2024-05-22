@@ -95,7 +95,7 @@ b, strong {
   color: #ffc200;
 }
 .custom-btn.custom-btn-bg {
-  background: #474559;
+  background: #C16FAD;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
@@ -479,7 +479,18 @@ b, strong {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-} 
+}
+
+.tech-img-wrapper {
+  /* height: 100px;
+  width: 100%;
+  display: grid; */
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f4f4f5;
+  border-radius: 5px;
+  
+}
 
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
@@ -584,3 +595,79 @@ b, strong {
     vertical-align: top;
   }
 }
+
+#technologies {
+  min-height: 500px; 
+  border-radius: 5px;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.tabs { 
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#tab-button {
+  display: table;
+  table-layout: fixed;
+  width: 400px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: auto;
+}
+#tab-button li {
+  display: table-cell;
+  width: 20%;
+}
+#tab-button li a {
+  display: block;
+  padding: .5em;
+  /* background: #eee;
+  border: 1px solid #ddd; */
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+#tab-button li:not(:first-child) a {
+  border-left: none;
+}
+#tab-button li a:hover,
+#tab-button .is-active a {
+  border-bottom-color: transparent;
+  background: #fff;
+}
+.tab-contents {
+  padding: .5em 2em 1em;
+  /* border: 1px solid #ddd; */
+} 
+
+.tab-button-outer {
+  display: none;
+}
+.tab-contents {
+  margin-top: 20px; 
+}
+@media screen and (min-width: 768px) {
+  .tab-button-outer {
+    position: relative;
+    z-index: 2;
+    display: block;
+  }
+  .tab-select-outer {
+    display: none;
+  }
+  .tab-contents {
+    position: relative;
+    top: -1px;
+    margin-top: 0;
+  }
+}
+
+
+#tab-button .is-active a{
+  color: #c16fad;
+}
+
+
+/* complementary color c16fad */
