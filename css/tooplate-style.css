@@ -1,12 +1,3 @@
-/*
-
-Tooplate 2115 Marvel
-
-https://www.tooplate.com/view/2115-marvel
-
-*/
-
-
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
 body {
   font-family: "Maven Pro", sans-serif;
@@ -95,7 +86,7 @@ b, strong {
   color: #ffc200;
 }
 .custom-btn.custom-btn-bg {
-  background: #C16FAD;
+  background: #474559;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
@@ -342,6 +333,7 @@ b, strong {
   height: 75px;
   line-height: 75px;
   text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .timeline-yr span {
   color: #ffffff;
@@ -357,6 +349,7 @@ b, strong {
   max-width: 432px;
   margin-left: 6em;
 }
+
 .timeline-info small {
   color: #474559;
   font-size: 16px;
@@ -364,6 +357,10 @@ b, strong {
   display: inline-block;
   vertical-align: middle;
   margin-left: 15px;
+}
+
+.timeline-info p {
+  font-size: 1rem;
 }
 
 .owl-carousel .owl-nav span {
@@ -481,15 +478,12 @@ b, strong {
   align-items: center;
 }
 
-.tech-img-wrapper {
-  /* height: 100px;
-  width: 100%;
-  display: grid; */
+.tech-img-wrapper { 
   padding: 15px;
   margin-bottom: 20px;
-  background-color: #f4f4f5;
-  border-radius: 5px;
-  
+  border-radius: 7px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
 }
 
 @media (min-width: 1270px) {
@@ -635,7 +629,7 @@ b, strong {
 #tab-button li a:hover,
 #tab-button .is-active a {
   border-bottom-color: transparent;
-  background: #fff;
+  background: transparent;
 }
 .tab-contents {
   padding: .5em 2em 1em;
@@ -666,8 +660,174 @@ b, strong {
 
 
 #tab-button .is-active a{
-  color: #c16fad;
+  color: #ffc200;
+}
+
+.tech-img-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.tech-img-wrapper .text {
+  color: white;
+  font-size: 0.925em;
+  position: absolute;
+  width: 95%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tech-img-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+
+#tab-button li a:hover {
+  color: #ffc200!important;
 }
 
 
 /* complementary color c16fad */
+
+
+.card {
+	margin: 0 auto;
+	border: none;
+}
+.card .carousel-item {
+	min-height: 190px;
+}
+.card .carousel-caption {
+	padding: 0;
+	right: 15px;
+	left: 15px;
+	top: 15px;
+	color: #3d3d3d;
+	border: 1px solid #ccc;
+	min-height:175px;
+	padding: 15px;
+}
+
+#testimonials .card {
+  background: transparent;
+}
+.card .carousel-caption .col-sm-3 {
+	display: flex;
+	align-items: center;
+}
+.card .carousel-caption .col-sm-9 {
+	text-align: left;
+}
+.card .carousel-control-prev, .card .carousel-control-next {
+	color: #3d3d3d !important;
+	opacity: 1 !important;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	background-image: none;
+	color: #fff;
+	font-size: 14px;
+	background-color: #6fc183;
+	height: 32px;
+	line-height: 32px;
+	width: 32px;
+}
+.carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+	opacity: 0.85;
+}
+.carousel-control-prev {
+	left: 40%;
+	top: 110%;
+}
+.carousel-control-next {
+	right: 40%;
+	top: 110%;
+}
+.midline {
+	width: 60px;
+	border-top: 1px solid #6fc183;
+}
+.carousel-caption h2 {
+	font-size: 1.4rem;
+}
+.carousel-caption h2 span {
+	color: #6fc183;
+}
+
+.carousel-caption small {
+  font-size: 1rem;
+}
+
+ @media (min-width: 320px) and (max-width: 575px) {
+.carousel-caption {
+	position: relative;
+}
+.card .carousel-caption {
+	left: 0;
+	top: 0;
+	margin-bottom: 15px;
+}
+.card .carousel-caption img {
+	margin: 0 auto;
+}
+.carousel-control-prev {
+	left: 35%;
+	top: 105%;
+}
+.carousel-control-next {
+	right: 35%;
+	top: 105%;
+}
+.card .carousel-caption h3 {
+	margin-top: 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+.carousel-caption {
+	position: relative;
+}
+.card .carousel-caption {
+	left: 0;
+	top: 0;
+	margin-bottom: 15px;
+}
+.card .carousel-caption img {
+	margin: 0 auto;
+}
+.card .carousel-caption h3, .card .carousel-caption small {
+	text-align: center;
+}
+.carousel-control-prev {
+	left: 35%;
+	top: 105%;
+}
+.carousel-control-next {
+	right: 35%;
+	top: 105%;
+}
+}
+@media (min-width: 767px) and (max-width: 991px) {
+.card .carousel-caption h3 {
+	margin-top: 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+}
+
+
+#testimonials {
+  margin-bottom: 3rem;
+}

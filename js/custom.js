@@ -32,6 +32,14 @@
     // TOOLTIP
     $('.social-links a').tooltip();
     
+    $("#contact-form").submit(function(e) {
+      e.preventDefault();
+      var email = $("#email").val();
+      var subject = `Inquiry - ${$("#name").val()} - ${email}`;
+      var message = $("#message").val();
+      var mailTo = `mailto:algerapudmakiputin@gmail.com?body=${encodeURIComponent(message)}&subject=${encodeURIComponent(subject)}`;
+      window.location.href = mailTo;
+    })
 })(jQuery);
 
 
