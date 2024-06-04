@@ -597,6 +597,11 @@ b, strong {
   margin-bottom: 1rem;
 }
 
+#technologies .sub {
+  max-width: 520px;
+  margin: auto;
+}
+
 .tabs { 
   margin: 0 auto;
   padding: 0 20px;
