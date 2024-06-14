@@ -715,7 +715,7 @@ b, strong {
 	border: none;
 }
 .card .carousel-item {
-	min-height: 190px;
+	min-height: 260px;
 }
 .card .carousel-caption {
 	padding: 0;
@@ -724,7 +724,7 @@ b, strong {
 	top: 15px;
 	color: #3d3d3d;
 	border: 1px solid #ccc;
-	min-height:175px;
+	min-height:245px;
 	padding: 15px;
 }
 
